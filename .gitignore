@@ -1,0 +1,4 @@
+.venv/
+data/
+core/__pycache__/
+test.py

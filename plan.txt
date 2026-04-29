@@ -1,0 +1,37 @@
+f1-insight-hub/
+│
+├── app.py                      # Streamlit entry point (navigation only)
+│
+├── pages/
+│   ├── 1_Telemetry_Analyzer.py
+│   ├── 2_Track_Explorer.py
+│   ├── 3_Car_Wear_Model.py
+│   └── 4_Live_Race_Tracker.py  # Basic near-live (optional)
+│
+├── core/
+│   ├── fastf1_loader.py        # All FastF1 access + caching
+│   ├── telemetry_core.py       # Lap & telemetry processing
+│   ├── track_core.py           # Track metadata & geometry
+│   └── wear_core.py            # Component wear calculations
+│
+├── visuals/
+│   ├── telemetry_charts.py     # Speed, throttle, delta plots
+│   ├── track_map.py            # Track SVG/GPS plotting
+│   └── wear_charts.py          # Component life graphs
+│
+├── data/
+│   ├── tracks/                 # Track SVGs + JSON metadata
+│   ├── cache/                  # FastF1 cached sessions
+│   └── static/                 # Images/icons
+│
+├── storage/
+│   ├── db.py                   # SQLite connector
+│   └── schema.sql              # Minimal schema
+│
+├── utils/
+│   ├── constants.py
+│   ├── caching.py
+│   └── helpers.py
+│
+├── requirements.txt
+└── README.md
